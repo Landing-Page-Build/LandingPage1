@@ -19,8 +19,8 @@ const menuData = [
 const Navbar = () => {
 	return (
 		<div>
-			<div className="bg-[#232b36] py-2">
-				<div className="grid grid-cols-2 text-2xl">
+			<div className="bg-[#232b36] py-2 px-2">
+				<div className="grid md:grid-cols-2 text-2xl">
 					<div className="text-white">
 						<div className="flex justify-center">
 							<img src={HeartIcon} className="w-10 h-10" alt="heart-icon" />
@@ -35,13 +35,13 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex text-black justify-center items-center gap-x-12 relative">
+			<div className="flex text-black justify-center items-center md:gap-x-12 gap-x-4 relative px-2">
 				<h1 className="font-semibold text-lg">UNSERE MENÜS</h1>
 				<img src="./logo_new.png" alt="Logo" className="w-20 h-20" />
 				<h1 className="font-semibold text-lg">ÜBER LUNCH4Y0U</h1>
 				<button className="bg-[#E11173] py-2 px-4 text-2xl text-white absolute right-10">AKTION</button>
 			</div>
-			<div className="bg-[#E11173] flex justify-center py-4 text-white text-sm font-semibold md:gap-x-12 gap-x-4">
+			<div className="bg-[#E11173] flex justify-center py-4 text-white text-sm font-semibold md:gap-x-12 gap-x-4 overflow-scroll">
 				{
 					menuData.map((val, key) => {
 						return (
