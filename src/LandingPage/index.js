@@ -1,12 +1,11 @@
 import Pumpkin from "../Icons/Pumpkin.svg";
-import Footer from "../Footer";
 import ProductLayout from "./productLayout";
 
 const LandingPage = () => {
 	return (
 		<div>
 			<img className="w-full" src="/lunch4you_rabatt.png" alt="" />
-			<div className="bg-[#E11173] lg:px-24 px-8 lg:h-80 h-64 mt-10 grid md:grid-cols-2 py-4">
+			<div className="bg-[#E11173] xl:px-24 lg:px-16 px-8 lg:h-80 h-64 mt-10 grid md:grid-cols-2 py-4">
 				<div className="text-white xl:text-2xl lg:text-xl md:text-lg text-base">
 					<p>
 						Zu Halloween haben wir jetzt ein ganz besonderes Special für euch. Probiert unsere schaurig leckeren Menüs in unserer Halloween-Probier-Box zum Super-Sparpeis!
@@ -20,7 +19,7 @@ const LandingPage = () => {
 					<img src={Pumpkin} alt="" className="w-[150rem]" />
 				</div>
 			</div>
-			<div className="flex lg:px-24 px-8 lg:h-80 h-60 mt-10 pb-12 items-center">
+			<div className="flex xl:px-24 lg:px-16 px-8 lg:h-80 h-60 mt-10 pb-12 items-center">
 				<div>
 					<p className="text-[#E11173] text-4xl">
 						Nutze Jetzt deine
@@ -32,12 +31,12 @@ const LandingPage = () => {
 			</div>
 			<img className="w-full" src="/halloween.png" alt="" />
 			<ProductLayout/>
-			<div className="lg:px-24 px-8 py-8 bg-[#E11173]">
+			<div className=" xl:px-24 lg:px-16 px-8 py-8 bg-[#E11173]">
 				<p className="text-3xl text-white">
 					Ob zuhause, oder im Büro - in nur 4min hast du Leckere Gerichte auf dem Teller -ganz nach deinem Stil und deinem Geschmack. Vorbei ist die Zeit, in der du unnötiges Geld ausgegeben hast, um teure Zutaten zu kaufen, die sowieso dann nur noch Platz im Schrank wegnehmen. Und dazu noch - kein stressiges einkaufen und zubereiten mehr. Leckere Fertiggericht, die vielfältig und lecker sind. Einfach für zu Hause.
 				</p>
 			</div>
-			<div className="lg:px-24 px-8 py-4 grid md:grid-cols-4">
+			<div className=" xl:px-24 lg:px-16 px-8 py-4 grid md:grid-cols-4">
 				<div className="col-span-3">
 					<p className="text-[#E11173] text-4xl py-2">wie LanGe isc mein Menü HaLCBar?</p>
 					<p className="text-xl">
@@ -56,7 +55,6 @@ const LandingPage = () => {
 
 				</div>
 			</div>
-			<Footer />
 		</div>)
 }
 
