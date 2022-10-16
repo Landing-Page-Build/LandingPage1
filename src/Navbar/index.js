@@ -45,7 +45,7 @@ const Navbar = () => {
 				{
 					menuData.map((val, key) => {
 						return (
-							<div className='cursor-pointer'>
+							<div className='cursor-pointer' key={key}>
 								<div>{val.title}</div>
 							</div>
 						)
