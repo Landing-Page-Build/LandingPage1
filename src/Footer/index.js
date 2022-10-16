@@ -20,7 +20,7 @@ const Footer = () => {
 			</div>
 			<div className="bg-black px-24 py-8 grid grid-cols-3">
 				<div className="text-white text-xl">
-					<Link to="/">WIDERRUF</Link>
+					<p>WIDERRUF</p>
 					<p>AGB</p>
 					<p>IMPRESSUM</p>
 					<p>DATENSCHUTZ</p>
