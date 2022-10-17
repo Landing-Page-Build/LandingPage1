@@ -3,7 +3,6 @@ import HeartIcon from '../Icons/HeartIcon.svg';
 import ListIcon from '../Icons/ListIcon';
 import CloseIcon from '../Icons/CloseIcon';
 import Expressversand from '../Icons/Expressversand.svg';
-import Icon_Herz_light from '../Icons/Icon_Herz_light.svg';
 
 const menuData = [
 	{ title: "German Style", to: "/1" },
@@ -57,8 +56,8 @@ const Navbar = () => {
 				<button className="font-semibold text-lg focus:bg-[#E11173] p-2 hidden md:block">UNSERE MENÜS</button>
 				<img src="./logo_new.png" alt="Logo" className="w-20 h-20" />
 				<button className="font-semibold text-lg focus:bg-[#E11173] p-2 hidden md:block">ÜBER LUNCH4Y0U</button>
-				<button className="bg-[#E11173] py-2 md:px-4 px-2 md:text-2xl text-xl text-white absolute right-10">AKTION</button>
-				<img src="https://lunch4you.de/frontend/img/karoc.png" className="absolute right-20" alt="Not found" />
+				<button className="bg-[#E11173] py-2 md:px-4 px-2 md:text-2xl text-xl text-white absolute right-20">AKTION</button>
+				<img src="https://lunch4you.de/frontend/img/karoc.png" className="absolute right-10 h-6 w-6" alt="Not found" />
 			</div>
 			<div className={`bg-white w-full absolute overflow-hidden transform transition-all duration-150 ease-in-out ${show ? 'h-24' : 'h-0'}`}>
 				<div className="flex flex-col items-start">
