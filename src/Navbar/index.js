@@ -3,6 +3,7 @@ import HeartIcon from '../Icons/HeartIcon.svg';
 import ListIcon from '../Icons/ListIcon';
 import CloseIcon from '../Icons/CloseIcon';
 import Expressversand from '../Icons/Expressversand.svg';
+import GraphIcon from '../Icons/GraphIcon';
 
 const menuData = [
 	{ title: "German Style", to: "/1" },
@@ -39,7 +40,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
-			<div className={`flex text-black justify-center items-center md:gap-x-12 gap-x-4 relative px-2`}>
+			<div className={`flex text-black sm:justify-center justify-start items-center md:gap-x-12 gap-x-4 relative px-2`}>
 				<div className="flex justify-end px-4 text-sm font-semibold items-center absolute left-5 md:hidden">
 					{
 						show ? (
@@ -54,10 +55,16 @@ const Navbar = () => {
 					}
 				</div>
 				<button className="font-semibold text-lg focus:bg-[#E11173] p-2 hidden md:block">UNSERE MENÜS</button>
-				<img src="./logo_new.png" alt="Logo" className="w-20 h-20" />
+				<img src="./logo_new.png" alt="Logo" className="w-20 h-20 sm:ml-0 ml-20" />
 				<button className="font-semibold text-lg focus:bg-[#E11173] p-2 hidden md:block">ÜBER LUNCH4Y0U</button>
-				<button className="bg-[#E11173] py-2 md:px-4 px-2 md:text-2xl text-xl text-white absolute right-20">AKTION</button>
-				<img src="https://lunch4you.de/frontend/img/karoc.png" className="absolute right-10 h-6 w-6" alt="Not found" />
+				<div className="absolute right-4 flex gap-x-4 items-center">
+					<button className="bg-[#E11173] py-2 md:px-4 px-2 md:text-2xl text-xl text-white">AKTION</button>
+					<div className="relative">
+						<span className="bg-[#E11173] rounded-full px-1 absolute -right-[10px] -top-4 font-bold text-white">0</span>
+						<img src="https://lunch4you.de/frontend/img/karoc.png" className="h-6 w-6" alt="Not found" />
+					</div>
+					<GraphIcon />
+				</div>
 			</div>
 			<div className={`bg-white w-full absolute overflow-hidden transform transition-all duration-150 ease-in-out ${show ? 'h-24' : 'h-0'}`}>
 				<div className="flex flex-col items-start">

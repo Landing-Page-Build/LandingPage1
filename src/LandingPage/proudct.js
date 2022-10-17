@@ -25,7 +25,7 @@ const Product = ({ url }) => {
 					<span>HALLOWEEN PAKET</span>
 					<span>$9.20</span>
 				</div>
-				<div className="flex gap-1 justify-between items-center">
+				<div className="flex gap-1 justify-between items-center flex-col sm:flex-row">
 					<div className="flex">
 						{
 							Info.map((val, key) => {
@@ -42,7 +42,7 @@ const Product = ({ url }) => {
 					</div>
 					<div className="border-2 border-black">
 						<button className="px-2" onClick={() => {setNumber(number - 1)}}>-</button>
-						<input className="sm:w-28 w-16 focus:outline-none" value={number} />
+						<input className="sm:w-28 w-16 focus:outline-none ring-2 ring-black" value={number} />
 						<button className="px-2" onClick={() => {setNumber(number + 1)}}>+</button>
 					</div>
 				</div>
