@@ -6,8 +6,8 @@ const LandingPage = () => {
 	return (
 		<div>
 			<img className="w-full" src="/lunch4you_rabatt.png" alt="" />
-			<div className="bg-[#E11173] xl:px-24 lg:px-16 px-8 lg:h-80 h-64 mt-10 grid md:grid-cols-2 py-4">
-				<div className="text-white xl:text-2xl lg:text-xl md:text-lg text-base">
+			<div className="bg-[#E11173] xl:px-24 lg:px-16 px-8 lg:h-80 h-64 mt-8 grid md:grid-cols-2 py-4">
+				<div className="text-white xl:text-2xl lg:text-xl sm:text-base text-sm">
 					<p>
 						Zu Halloween haben wir jetzt ein ganz besonderes Special für euch. Probiert unsere schaurig leckeren Menüs in unserer Halloween-Probier-Box zum Super-Sparpeis!
 					</p>
@@ -16,8 +16,8 @@ const LandingPage = () => {
 						Zum Beispiel unsere cremige Kürbissuppe, mit Original-Kürbissen aus der Rhön. Oder unsere handgerollten Rinderrouladen in dunkler Sauce mit Semmelknödeln und Rotkraut.
 					</p>
 				</div>
-				<div className="-mt-44 hidden md:block">
-					<img src={Pumpkin} alt="" className="w-[150rem]" />
+				<div className="xl:-mt-36 -mt-24 hidden md:block">
+					<img src={Pumpkin} alt="" className="w-[800px]" />
 				</div>
 			</div>
 			<div className="flex xl:px-24 lg:px-16 px-8 lg:h-80 h-60 mt-10 pb-12 items-center">
@@ -31,7 +31,7 @@ const LandingPage = () => {
 				</div>
 			</div>
 			<img className="w-full" src="/halloween.png" alt="" />
-			<ProductLayout/>
+			<ProductLayout />
 			<div className="xl:px-24 lg:px-16 px-8 py-8 bg-[#E11173]">
 				<p className="lg:text-3xl text-xl text-white">
 					Ob zuhause, oder im Büro - in nur 4min hast du Leckere Gerichte auf dem Teller -ganz nach deinem Stil und deinem Geschmack. Vorbei ist die Zeit, in der du unnötiges Geld ausgegeben hast, um teure Zutaten zu kaufen, die sowieso dann nur noch Platz im Schrank wegnehmen. Und dazu noch - kein stressiges einkaufen und zubereiten mehr. Leckere Fertiggericht, die vielfältig und lecker sind. Einfach für zu Hause.

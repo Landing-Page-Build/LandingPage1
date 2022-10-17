@@ -25,7 +25,7 @@ const Navbar = () => {
 	return (
 		<div>
 			<div className="bg-[#232b36] py-2 px-2">
-				<div className="grid md:grid-cols-2 text-2xl">
+				<div className="grid md:grid-cols-2 md:text-2xl text-lg">
 					<div className="text-white">
 						<div className="flex justify-center">
 							<img src={HeartIcon} className="w-10 h-10" alt="heart-icon" />
@@ -47,7 +47,7 @@ const Navbar = () => {
 				<button className="bg-[#E11173] py-2 px-4 text-2xl text-white absolute right-10">AKTION</button>
 			</div>
 			<div className="hidden md:block">
-				<div className="bg-[#E11173] flex justify-center py-4 text-white text-sm font-semibold md:gap-x-12 gap-x-4 overflow-scroll">
+				<div className="bg-[#E11173] flex justify-center py-4 text-white text-sm font-semibold lg:gap-x-4 gap-x-2 overflow-scroll">
 					{
 						menuData.map((val, key) => {
 							return (
