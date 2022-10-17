@@ -14,7 +14,7 @@ const Footer = () => {
 					<Instagram />
 				</div>
 			</div>
-			<div className="bg-black px-24 py-8 grid sm:grid-cols-3">
+			<div className="bg-black lg:px-16 px-8 py-8 grid sm:grid-cols-3">
 				<div className="text-white text-xl">
 					<p>WIDERRUF</p>
 					<p>AGB</p>
