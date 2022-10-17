@@ -16,8 +16,8 @@ const Product = ({ url }) => {
 	}
 
 	return (
-		<div className="w-[450px] my-2">
-			<div className="h-40">
+		<div className="my-2">
+			<div className="h-80">
 				<img className="w-full h-full" src={url} alt="" />
 			</div>
 			<div className="font-semibold p-4">

@@ -20,7 +20,7 @@ const menuData = [
 	{ title: "Vegetarisch", to: "/1" },
 ]
 const Navbar = () => {
-	const [show, setShow] = useState(true);
+	const [show, setShow] = useState(false);
 
 	return (
 		<div>
@@ -40,26 +40,46 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex text-black justify-center items-center md:gap-x-12 gap-x-4 relative px-2">
-				<h1 className="font-semibold text-lg">UNSERE MENÜS</h1>
+			<div className={`flex text-black justify-center items-center md:gap-x-12 gap-x-4 relative px-2`}>
+				<div className="flex justify-end px-4 text-sm font-semibold items-center absolute left-5 md:hidden">
+					{
+						show ? (
+							<button onClick={() => setShow(false)}>
+								<CloseIcon />
+							</button>
+						) : (
+							<button onClick={() => setShow(true)} className="flex justify-center items-center">
+								<ListIcon />
+							</button>
+						)
+					}
+				</div>
+				<button className="font-semibold text-lg focus:bg-[#E11173] p-2 hidden md:block">UNSERE MENÜS</button>
 				<img src="./logo_new.png" alt="Logo" className="w-20 h-20" />
-				<h1 className="font-semibold text-lg">ÜBER LUNCH4Y0U</h1>
-				<button className="bg-[#E11173] py-2 px-4 text-2xl text-white absolute right-10">AKTION</button>
+				<button className="font-semibold text-lg focus:bg-[#E11173] p-2 hidden md:block">ÜBER LUNCH4Y0U</button>
+				<button className="bg-[#E11173] py-2 md:px-4 px-2 md:text-2xl text-xl text-white absolute right-10">AKTION</button>
+				<img src="https://lunch4you.de/frontend/img/karoc.png" className="absolute right-20" alt="Not found" />
 			</div>
-			<div className="hidden md:block">
-				<div className="bg-[#E11173] flex justify-center py-4 text-white text-sm font-semibold lg:gap-x-4 gap-x-2 overflow-scroll">
+			<div className={`bg-white w-full absolute overflow-hidden transform transition-all duration-150 ease-in-out ${show ? 'h-24' : 'h-0'}`}>
+				<div className="flex flex-col items-start">
+					<button className="w-full font-semibold text-lg focus:bg-[#E11173] focus:outline-none p-2">UNSERE MENÜS</button>
+					<button className="w-full font-semibold text-lg focus:bg-[#E11173] focus:outline-none p-2">ÜBER LUNCH4Y0U</button>
+				</div>
+			</div>
+			<div className="bg-[#E11173] flex py-4 px-4 text-white text-sm font-semibold overflow-scroll">
+				<div className="mx-auto flex gap-x-4">
 					{
 						menuData.map((val, key) => {
 							return (
 								<div className='cursor-pointer' key={key}>
-									<div>{val.title}</div>
+									<div className='whitespace-nowrap'>{val.title}</div>
 								</div>
 							)
 						})
 					}
 				</div>
 			</div>
-			<div className="md:hidden">
+			{/* <div className="md:hidden">
 				<div className="bg-[#E11173] flex justify-end px-4 py-2 text-white text-sm font-semibold items-center">
 					{
 						show ? (
@@ -88,7 +108,7 @@ const Navbar = () => {
 						</div>
 					) : ""
 				}
-			</div>
+			</div> */}
 		</div>
 	)
 }
