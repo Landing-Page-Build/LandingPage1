@@ -11,6 +11,10 @@ const Info = [
 const Product = ({ url }) => {
 	const [number, setNumber] = useState(0);
 
+	const onMinus = () => {
+		setNumber(number - 1);
+	}
+
 	return (
 		<div className="w-[450px] my-2">
 			<div className="h-40">
@@ -26,7 +30,7 @@ const Product = ({ url }) => {
 						{
 							Info.map((val, key) => {
 								return (
-									<div className="flex-col text-center">
+									<div className="flex-col text-center" key={key}>
 										<div className="bg-gray-600 rounded-full w-10 h-10 text-center pt-2 mx-auto">
 											<span className="text-white">128</span>
 										</div>
@@ -37,15 +41,15 @@ const Product = ({ url }) => {
 						}
 					</div>
 					<div className="border-2 border-black">
-						<button className="px-2">-</button>
+						<button className="px-2" onClick={() => {setNumber(number - 1)}}>-</button>
 						<input className="w-28 focus:outline-none" value={number} />
-						<button className="px-2">+</button>
+						<button className="px-2" onClick={() => {setNumber(number + 1)}}>+</button>
 					</div>
 				</div>
 			</div>
-			<div className="flex justify-between text-lg">
-				<button className="bg-[#03ACDE] text-white px-4">MEHR DAZU</button>
-				<button className="bg-[#E11473] text-white px-4">JETZT KAUFEN</button>
+			<div className="text-lg grid grid-cols-3 gap-4">
+				<button className="col-span-1 bg-[#03ACDE] text-white px-4">MEHR DAZU</button>
+				<button className="col-span-2 bg-[#E11473] text-white px-4">JETZT KAUFEN</button>
 			</div>
 		</div>
 	)

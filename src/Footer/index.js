@@ -1,24 +1,20 @@
-import { FaInstagram, FaFacebookSquare } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaFacebookSquare } from "react-icons/fa";
+import Instagram from "../Icons/Instagram"
 
 const Footer = () => {
 	return (
 		<>
 			<div className="py-4 bg-[#E11173] flex justify-center">
-				<div className="flex">
-					<FaInstagram
-						style={{ paddingLeft: 50 }}
-						size={30}
-						color={"white"}
-					/>
+				<div className="flex items-center gap-2">
 					<FaFacebookSquare
-						size={30}
+						size={45}
 						color={"white"}
 						style={{ marginLeft: 20 }}
 					/>
+					<Instagram />
 				</div>
 			</div>
-			<div className="bg-black px-24 py-8 grid grid-cols-3">
+			<div className="bg-black px-24 py-8 grid sm:grid-cols-3">
 				<div className="text-white text-xl">
 					<p>WIDERRUF</p>
 					<p>AGB</p>

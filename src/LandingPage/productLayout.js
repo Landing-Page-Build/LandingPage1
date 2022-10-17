@@ -6,7 +6,7 @@ const ProductLayout = () => {
 			<div className="text-center text-[#E11173] text-4xl">
 				<span>PROBIERE UNSERE HALLOWEEN PRODUKTE!</span>
 			</div>
-			<div className="flex flex-wrap gap-4 my-6">
+			<div className="flex flex-wrap gap-4 my-6 justify-center">
 				<Product url="./halloween.png" />
 				<Product url="./paymentCards.png" />
 				<Product url="./halloween.png" />

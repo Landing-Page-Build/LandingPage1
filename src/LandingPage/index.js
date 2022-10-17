@@ -1,4 +1,5 @@
 import Pumpkin from "../Icons/Pumpkin.svg";
+import Pumpkin2 from "../Icons/Pumpkin2.svg";
 import ProductLayout from "./productLayout";
 
 const LandingPage = () => {
@@ -31,13 +32,13 @@ const LandingPage = () => {
 			</div>
 			<img className="w-full" src="/halloween.png" alt="" />
 			<ProductLayout/>
-			<div className=" xl:px-24 lg:px-16 px-8 py-8 bg-[#E11173]">
+			<div className="xl:px-24 lg:px-16 px-8 py-8 bg-[#E11173]">
 				<p className="text-3xl text-white">
 					Ob zuhause, oder im Büro - in nur 4min hast du Leckere Gerichte auf dem Teller -ganz nach deinem Stil und deinem Geschmack. Vorbei ist die Zeit, in der du unnötiges Geld ausgegeben hast, um teure Zutaten zu kaufen, die sowieso dann nur noch Platz im Schrank wegnehmen. Und dazu noch - kein stressiges einkaufen und zubereiten mehr. Leckere Fertiggericht, die vielfältig und lecker sind. Einfach für zu Hause.
 				</p>
 			</div>
-			<div className=" xl:px-24 lg:px-16 px-8 py-4 grid md:grid-cols-4">
-				<div className="col-span-3">
+			<div className="xl:px-24 lg:px-16 px-8 py-4 grid md:grid-cols-6 relative overflow-hidden">
+				<div className="col-span-4">
 					<p className="text-[#E11173] text-4xl py-2">wie LanGe isc mein Menü HaLCBar?</p>
 					<p className="text-xl">
 						Unsere Menüs haben ab Produktionsdatum eine Mindesthaltbarkeit von 5 Tagen im Kühlschrank bei 4°. Gerne kannst du unsere Menüs aber auch einfrieren - du kannst einfach die komplette Packung in dein Gefrierfach packen. Du hast dann die Möglichkeit dein Menü am Vorabend langsam im Kühlschrank auftauen zu lassen. Oder auch direkt in die Mikrowelle zu stellen. Die Zubereitungszeit in der Mikrowelle erhöht sich bei eingefrorenen Gerichten und Power deiner Mikrowelle auf 8min.
@@ -52,7 +53,7 @@ const LandingPage = () => {
 					</p>
 				</div>
 				<div>
-
+					<img src={Pumpkin2} className="h-[500px] absolute" alt="" />
 				</div>
 			</div>
 		</div>)
