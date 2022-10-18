@@ -42,7 +42,7 @@ const Product = ({ url }) => {
 					</div>
 					<div className="border-2 border-black">
 						<button className="px-2" onClick={() => {setNumber(number - 1)}}>-</button>
-						<input className="sm:w-28 w-16 focus:outline-none ring-2 ring-black" value={number} />
+						<input className="sm:w-28 w-16 focus:outline-none ring-2 ring-black px-2" value={number} />
 						<button className="px-2" onClick={() => {setNumber(number + 1)}}>+</button>
 					</div>
 				</div>
