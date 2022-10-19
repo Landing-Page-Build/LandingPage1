@@ -7,12 +7,12 @@ const ProductLayout = () => {
 				<span>PROBIERE UNSERE HALLOWEEN PRODUKTE!</span>
 			</div>
 			<div className="flex flex-wrap gap-4 my-6 justify-center">
-				<Product url="./1.png" />
-				<Product url="./2.png" />
-				<Product url="./3.png" />
-				<Product url="./4.png" />
-				<Product url="./1.png" />
-				<Product url="./2.png" />
+				<Product url="./1.png" title="HALLOWEEN PAKET" price="9.2" />
+				<Product url="./2.png" title="HALLOWEEN PAKET" price="9.2" />
+				<Product url="./3.png" title="HALLOWEEN PAKET" price="9.2" />
+				<Product url="./4.png" title="HALLOWEEN PAKET" price="9.2" />
+				<Product url="./1.png" title="HALLOWEEN PAKET" price="9.2" />
+				<Product url="./2.png" title="HALLOWEEN PAKET" price="9.2" />
 			</div>
 		</div>
 	)

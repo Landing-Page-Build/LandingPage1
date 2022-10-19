@@ -14,7 +14,7 @@ const Footer = () => {
 					<Instagram />
 				</div>
 			</div>
-			<div className="bg-black lg:px-16 px-8 py-8 grid sm:grid-cols-3">
+			<div className="bg-black lg:px-16 px-8 py-8 grid sm:grid-cols-3 text-center">
 				<div className="text-white text-xl">
 					<p>WIDERRUF</p>
 					<p>AGB</p>
@@ -23,14 +23,14 @@ const Footer = () => {
 				</div>
 				<div className="text-white text-xl">
 					<p>WIDERRUF</p>
-					<p>Bürgermeister-Ebert-Straße 1</p>
-					<p>6124 Eichenzell</p>
+					<p className="text-lg">Bürgermeister-Ebert-Straße 1</p>
+					<p className="text-lg">6124 Eichenzell</p>
 					<p>T: 0800 7767677</p>
 					<p>M: info@lunch4you.de</p>
 				</div>
 				<div className="text-white text-xl">
 					<p>SICHERE ZAHLUNGSARTEN</p>
-					<img src="./paymentCards.png" alt="" />
+					<img className="mx-auto" src="./paymentCards.png" alt="" />
 				</div>
 			</div>
 		</>

@@ -8,7 +8,7 @@ const Info = [
 	{ title: "ZUCKER" },
 ]
 
-const Product = ({ url }) => {
+const Product = ({ url, title, price }) => {
 	const [number, setNumber] = useState(0);
 
 	const onMinus = () => {
@@ -18,12 +18,12 @@ const Product = ({ url }) => {
 	return (
 		<div className="my-2">
 			<div className="h-80">
-				<img className="w-full h-full" src={url} alt="" />
+				<img className="w-full h-full " src={url} alt="" />
 			</div>
 			<div className="font-semibold p-4">
 				<div className="flex justify-between">
-					<span>HALLOWEEN PAKET</span>
-					<span>$9.20</span>
+					<span>{title}</span>
+					<span>{price}$</span>
 				</div>
 				<div className="flex gap-1 justify-between items-center flex-col sm:flex-row">
 					<div className="flex">
